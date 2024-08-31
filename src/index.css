@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, html {
+
+  scroll-behavior: smooth;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Estilos específicos para BookSection */
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  min-height: 100vh;
+  padding: 2em;
+}
+
+.p-div {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.images-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em; /* Espacio entre imágenes */
+  margin-top: 3%;
+}
+
+.libro-completo {
+  width: 30%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.libro-completo:hover{
+  scale: calc(1.20);
+  transition: 0.4s;
+}
+
+
+.libro-completo.loaded {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#portada{
+  margin-right: 1em;
+}
+
+.highlight {
+  color: #ebe4c7; /* Color vainilla */
+}
+
+
+.h1-style {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 5%;
+  padding: 2% 0;
+  color: #a7abfa;
+  background-color: rgb(252, 240, 240);
+  border-radius: 25px;
+}
+
+.h1-style.bg-loaded {
+  background-size: 100% 100%; /* El fondo se expande al 100% del ancho */
+}
+
+.h2-style {
+  font-size: 1.8em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* MAIN HEADER PHOTO */
+
+.header {
+  font-size: 4em;
+  margin-top: 25%;
+  text-decoration: underline;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 5%;
+}
+
+.p-style {
+  font-size: 1.2em;
+  text-align: right;
+  color: #f0dada;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 5%;
+}
+
+.photo-div {
+  display: flex;
+  flex-direction: row;
+}
+
+/*MENU SECTION*/
+
+.ul-menu{
+  display: flex;
+  flex-direction: row;
+}
+
+.ul-menu li{
+
+  margin: 2%;
+  color: #a7abfa;
+  z-index: 1000000;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.ul-menu li a{
+  text-decoration: none;
+  font-size: 1.5em;
+  color: inherit;
+  outline: 0;
+  padding: 0.5em 0.9em;
+  transition: 0.4s;
+  border-radius: 0.5em;
+}
+
+.ul-menu li a:hover{
+  background-color: white;
+  border-radius: 0.5em;
+}
+
