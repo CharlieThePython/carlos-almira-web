@@ -7,7 +7,7 @@ function Menu() {
         <li><a href="" target="_self">Home</a></li>
         <li><a href="#services">Forjada en Versos</a></li>
         <li><a href="#about">Sobre el Autor</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
   );

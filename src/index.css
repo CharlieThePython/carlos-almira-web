@@ -102,6 +102,7 @@ button:focus-visible {
   height: auto;
   opacity: 0;
   transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.514);
 }
 
 .libro-completo:hover{
@@ -155,11 +156,12 @@ button:focus-visible {
 }
 
 .p-style {
-  font-size: 1.2em;
-  text-align: right;
+  font-size: 1.09em;
+  text-align: justify;
   color: #f0dada;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 5%;
+  margin-top: 4%;
 }
 
 .photo-div {
@@ -195,7 +197,7 @@ button:focus-visible {
 }
 
 .ul-menu li a:hover{
-  background-color: white;
+  background-color: rgb(252, 240, 240);
   border-radius: 0.5em;
 }
 
